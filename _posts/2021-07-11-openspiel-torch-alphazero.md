@@ -1,7 +1,7 @@
 ---
 title: ":computer: OpenSpiel's LibTorch AlphaZero"
 layout: post
-date: 2021-07-11 18:33
+date: 2020-07
 tag:
 image:
 headerImage: false
