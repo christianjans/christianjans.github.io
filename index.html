@@ -56,7 +56,12 @@ title: Home
       //   var messageElement = document.getElementById("textDiv");
       //   messageElement.innerHTML = text;
       // }
-      document.getElementById("textDiv").innerHTML = "hello world";
+      var texts = [
+        "asdf",
+        "qwer asdf",
+        "zcv asdf wer"
+      ]
+      document.getElementById("textDiv").innerHTML = texts[Math.floor(Math.random() * texts.length)];
     </script>
   </body>
 </html>
