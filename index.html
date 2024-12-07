@@ -40,22 +40,23 @@ title: Home
 <html>
   <head>
     Whatchu doing? 🤨
-
-  <script>
-    var texts = [
-      "I am a sentence.",
-      "Some nice stuff.",
-      "I am random too!"
-    ];
-    function displayRandomMessage() {
-      var text = texts[Math.floor(Math.random()*texts.length)]
-      var messageElement = document.getElementById("textDiv");
-      messageElement.innerHTML = text;
-    }
-  </script>
   </head>
 
   <body>
     <div id="textDiv"></div>
+
+    <script>
+      // var texts = [
+      //   "I am a sentence.",
+      //   "Some nice stuff.",
+      //   "I am random too!"
+      // ];
+      // function displayRandomMessage() {
+      //   var text = texts[Math.floor(Math.random()*texts.length)]
+      //   var messageElement = document.getElementById("textDiv");
+      //   messageElement.innerHTML = text;
+      // }
+      document.getElementById("textDiv").innerHTML = "hello world";
+    </script>
   </body>
 </html>
