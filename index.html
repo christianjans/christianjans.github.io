@@ -39,17 +39,20 @@ title: Home
 <html>
   <head>Whatchu doing? 🤨</head>
 
+  <body>
+    <div id="textDiv"></div>
+
   <script>
     var texts = [
       "I am a sentence.",
       "Some nice stuff.",
       "I am random too!"
     ];
-
-    document.getElementById('randomText').value = texts[Math.floor(Math.random()*texts.length)];
+    function displayRandomMessage() {
+      var text = texts[Math.floor(Math.random()*texts.length)]
+      var messageElement = document.getElementById("textDiv");
+      messageElement.innerHTML = text;
+    }
   </script>
-
-  <body>
-    <input type="text" id="randomText">
   </body>
 </html>
