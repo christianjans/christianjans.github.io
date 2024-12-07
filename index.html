@@ -39,11 +39,13 @@ title: Home
 <!DOCTYPE html>
 <html>
   <head>
-    Whatchu doing? 🤨
+    <title>Whatchu doin? 🤨</title>
   </head>
 
   <body>
-    <div id="textDiv"></div>
+    <div id="emojiDiv"></div>
+    <div id="prompt">Whatchu doin? Don't you know that...</div>
+    <div id="truthDiv"></div>
 
     <script>
       // var texts = [
@@ -56,12 +58,23 @@ title: Home
       //   var messageElement = document.getElementById("textDiv");
       //   messageElement.innerHTML = text;
       // }
-      var texts = [
-        "asdf",
-        "qwer asdf",
-        "zcv asdf wer"
+      var emojis = [
+        "🤔",
+        "🤨",
+        "🧐",
+        "🚫",
+        "👎",
+        "✋",
+        "⛔️",
+        "🙅‍♂️"
       ];
-      document.getElementById("textDiv").innerHTML = texts[Math.floor(Math.random() * texts.length)];
+      var truths = [
+        "You are no longer a slave to sin; the Son has set you free and you are free indeed? (John 8:31-36)",
+        "You have been given the Holy Spirit—the Spirit of truth & your advocate? (John 14:15-31)",
+        "You are justified & saved by God's grace through faith in Christ Jesus? (Romans 3:21-31)"
+      ]
+      document.getElementById("emojiDiv").innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+      document.getElementById("truthDiv").innerHTML = truths[Math.floor(Math.random() * truths.length)];
     </script>
   </body>
 </html>
